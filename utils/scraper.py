@@ -38,7 +38,7 @@ def fetch_cnn_article(url):
 
 # Example Usage (Replace URL with a real article)
 if __name__ == "__main__":
-    test_url = "https://edition.cnn.com/2024/02/27/world/example-news-article/index.html"  # Replace with a real CNN article
+    test_url = "https://edition.cnn.com/travel/cassowary-worlds-scariest-bird-australia-intl-hnk/index.html"  # Replace with a real CNN article
     article = fetch_cnn_article(test_url)
     
     print("\nTitle:", article["title"])
