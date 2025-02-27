@@ -9,11 +9,7 @@ def home():
     return {"message": "Welcome to the AI Fake News Detector"}
 
 @app.post("/analyse/")
-def analyse_text(content: dict = Body(...)):  # ✅ Accept raw dictionary
-    text = content.get("content")  # Extract "content" manually
-    if not text:
-        return {"error": "No content provided"}
-
-    credibility = check_fact(text)
-    bias = analyse_bias(text)
+def analyse_text(content: str = Body(...)):  # ✅ Force it to be a request body
+    credibility = check_fact(content)
+    bias = analyse_bias(content)
     return {"credibility": credibility, "bias": bias}
