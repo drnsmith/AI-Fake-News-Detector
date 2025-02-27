@@ -1,11 +1,7 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-import sys
-import os
 
-# Ensure the app module is recognized
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
+# Import modules directly (without 'app.')
 from fact_checker import check_fact
 from bias_analysis import analyse_bias
 
