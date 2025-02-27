@@ -1,6 +1,14 @@
 from fastapi import FastAPI
 from utils.save_html_new import save_html_new  # Match function name
 from utils.extract_text_new import extract_article_text_new  # Match function name
+import sys
+import os
+
+# Add the root project directory to Python's path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+
+
 
 app = FastAPI()
 
