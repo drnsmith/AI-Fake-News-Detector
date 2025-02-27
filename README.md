@@ -1,10 +1,10 @@
-# 📢 Fast-Track AI-Powered Fake News Detector
+# Fast-Track AI-Powered Fake News Detector
 
 ### **AI System for Rapid Misinformation Detection & Analysis**
 
 ![Project Banner](./assets/project_image_2.png)
 
-## ** Project Overview**
+## **Project Overview**
 This AI system provides **real-time misinformation detection** by analysing articles, blogs, and social media content using NLP and AI-driven credibility checks.
 
 - **AI-Powered Fact-Checking** (GPT-4o, LangChain)  
@@ -15,7 +15,7 @@ This AI system provides **real-time misinformation detection** by analysing arti
 
 ---
 
-## ** Features**
+## **Features**
 - **Real-Time Fake News Detection**: Evaluate article credibility instantly.  
 - **AI-Powered Fact-Checking**: Cross-checks with verified sources.  
 - **Bias & Sentiment Analysis**: Understand the tone & political bias of content.  
@@ -24,7 +24,7 @@ This AI system provides **real-time misinformation detection** by analysing arti
 
 ---
 
-## ** Tech Stack**
+## **Tech Stack**
 | Component  | Technology  |
 |------------|------------|
 | **Backend** | FastAPI / Flask  |
@@ -36,7 +36,7 @@ This AI system provides **real-time misinformation detection** by analysing arti
 
 ---
 
-## ** Project Structure**
+## **Project Structure**
 ```
 ai-fake-news-detector
 ├── app
@@ -58,20 +58,20 @@ ai-fake-news-detector
 
 ---
 
-## ** Setup & Installation**
+## **Setup & Installation**
 
-### **1️. Clone Repository**
+### **1. Clone Repository**
 ```sh
 git clone https://github.com/YOUR-USERNAME/ai-fake-news-detector.git
 cd ai-fake-news-detector
 ```
 
-### **2️. Install Dependencies**
+### **2. Install Dependencies**
 ```sh
 pip install -r requirements.txt
 ```
 
-### **3️. Run Locally**
+### **3. Run Locally**
 ```sh
 python app/main.py
 ```
@@ -79,20 +79,20 @@ Access the web UI at `http://localhost:7860`
 
 ---
 
-## ** Deployment**
-### ** Deploy on Hugging Face Spaces**
-1️. Push to a new Hugging Face Space.  
-2️. Set `app/main.py` as entry point.  
+## **Deployment**
+### **Deploy on Hugging Face Spaces**
+1. Push to a new Hugging Face Space.  
+2. Set `app/main.py` as entry point.  
 
 OR
 
-### ** Deploy on Vercel**
-1️. Run `vercel deploy` in the repo directory.
-2️. Access live app on `your-vercel-url.com`
+### **Deploy on Vercel**
+1. Run `vercel deploy` in the repo directory.
+2. Access live app on `your-vercel-url.com`
 
 ---
 
-## ** Example Usage**
+## **Example Usage**
 - Enter a website URL or social media post.
 - AI checks for misinformation.
 - Bias & sentiment analysis provides additional insights.
@@ -100,15 +100,15 @@ OR
 
 ---
 
-## ** Future Improvements**
+## **Future Improvements**
 - Deep Fake Video Detection.  
 - Advanced NLP-based propaganda tracking.  
-- Improved real-time misinformation network visualization.  
+- Improved real-time misinformation network visualisation.  
 - Integration with major fact-checking databases.  
 
 ---
 
-## Contribution Guidelines
+## **Contribution Guidelines**
 Contributions are welcome! Please follow these steps:
 1. Fork the repository.
 2. Create a new branch (`feature-branch-name`).
@@ -117,7 +117,7 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## License
+## **License**
 This project is licensed under the **MIT License** – you are free to use, modify, and distribute it.
 
 
