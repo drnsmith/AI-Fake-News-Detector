@@ -5,16 +5,12 @@ from bias_analysis import analyse_bias
 
 app = FastAPI()
 
-# ✅ Define a Pydantic model for request validation
+# ✅ Define a proper request model for JSON body parsing
 class AnalyseRequest(BaseModel):
     content: str
 
-@app.get("/")
-def home():
-    return {"message": "Welcome to the AI Fake News Detector"}
-
 @app.post("/analyse/")
-def analyse_text(request: AnalyseRequest):  # ✅ Now using a Pydantic model
+def analyse_text(request: AnalyseRequest):  # ✅ Expect a JSON request body
     credibility = check_fact(request.content)
     bias = analyse_bias(request.content)
     return {"credibility": credibility, "bias": bias}
