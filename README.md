@@ -2,7 +2,7 @@
 
 ### **AI System for Rapid Misinformation Detection & Analysis**
 
-![Project Banner](./assets/project_image_2.png)
+![Project Banner](./project_image_2.png)
 
 ## **Project Overview**
 This AI system provides **real-time misinformation detection** by analysing articles, blogs, and social media content using NLP and AI-driven credibility checks.
