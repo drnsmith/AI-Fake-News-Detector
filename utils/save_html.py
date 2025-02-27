@@ -1,7 +1,7 @@
 import requests
 
 # Use a real CNN news article URL
-url = "https://edition.cnn.com/2024/02/27/world/example-news-article/index.html"
+url = "https://edition.cnn.com/travel/cassowary-worlds-scariest-bird-australia-intl-hnk/index.html"
 
 # Set headers to mimic a real browser
 headers = {
