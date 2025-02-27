@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from utils.save_html import save_html
-from utils.extract_text import extract_article_text
+from utils.save_html_new import save_html_new
+from utils.extract_text_new import extract_article_text
 
 app = FastAPI()
 
