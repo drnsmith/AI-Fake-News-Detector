@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from fact_checker import check_fact
 from bias_analysis import analyse_bias
+from fastapi import Body
 
 app = FastAPI()
 
@@ -22,6 +23,4 @@ def home():
 
 # ✅ Ensure the request body is parsed correctly
 @app.post("/analyse/")
-def analyse_text(request: AnalyseRequest):
-    print("🔍 Received Content:", request.content)  # ✅ Debugging Line
-    return {"received_content": request.content}
+def analyse_text(request: AnalyseRequest = Body(...)):  # ✅ Explicitly mark as request body
