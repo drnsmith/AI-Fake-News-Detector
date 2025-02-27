@@ -1,7 +1,3 @@
-from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel
-
-# Import modules directly (without 'app.')
 from fact_checker import check_fact
 from bias_analysis import analyse_bias
 
