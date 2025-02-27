@@ -5,7 +5,7 @@ from bias_analysis import analyse_bias
 
 app = FastAPI()
 
-# ✅ Define a Pydantic model for the request body
+# ✅ Define a Pydantic model for proper request body parsing
 class AnalyseRequest(BaseModel):
     content: str
 
