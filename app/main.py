@@ -22,7 +22,6 @@ def home():
 
 # ✅ Ensure the request body is parsed correctly
 @app.post("/analyse/")
-def analyse_text(request: AnalyseRequest):  
-    credibility = fact_checker(request.content)
-    bias = bias_analyser(request.content)
-    return {"credibility": credibility, "bias": bias}
+def analyse_text(request: AnalyseRequest):
+    print("🔍 Received Content:", request.content)  # ✅ Debugging Line
+    return {"received_content": request.content}
