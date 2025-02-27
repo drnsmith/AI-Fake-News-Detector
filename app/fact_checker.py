@@ -1,6 +1,6 @@
 from transformers import pipeline
 
-fact_checker = pipeline("text-classification", model="facebook/bart-large-mnli")
+fact_checker = pipeline("text-classification", model="facebook/bart-large-mnli", framework="pt")
 
 def check_fact(text):
     categories = ["factual", "misleading", "satire"]
