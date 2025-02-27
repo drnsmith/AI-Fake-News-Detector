@@ -29,7 +29,7 @@ def visualize_graph(G):
     pos = nx.spring_layout(G, seed=42)
     nx.draw(G, pos, with_labels=True, node_size=500, node_color="red", font_size=10)
     plt.title("Misinformation Spread Graph")
-    plt.show()
+    plt.show(block=True)  # Keep window open
 
 # Example Usage (for testing)
 if __name__ == "__main__":
@@ -41,4 +41,5 @@ if __name__ == "__main__":
     ]
     G = generate_fake_news_graph(sample_articles)
     visualize_graph(G)
+
 
