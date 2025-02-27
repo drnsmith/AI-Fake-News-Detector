@@ -1,12 +1,11 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Body
 from pydantic import BaseModel
 from fact_checker import check_fact
 from bias_analysis import analyse_bias
-from fastapi import Body
 
 app = FastAPI()
 
-# ✅ Define a Pydantic model for the request body
+# ✅ Define Pydantic model
 class AnalyseRequest(BaseModel):
     content: str
 
@@ -21,6 +20,8 @@ def load_models():
 def home():
     return {"message": "Welcome to the AI Fake News Detector"}
 
-# ✅ Ensure the request body is parsed correctly
 @app.post("/analyse/")
-def analyse_text(request: AnalyseRequest = Body(...)):  # ✅ Explicitly mark as request body
+def analyse_text(request: AnalyseRequest = Body(...)):  # ✅ Explicitly use Body to force JSON parsing
+    credibility = fact_checker(request.content)
+    bias = bias_analyser(request.content)
+    return {"credibility": credibility, "bias": bias}
